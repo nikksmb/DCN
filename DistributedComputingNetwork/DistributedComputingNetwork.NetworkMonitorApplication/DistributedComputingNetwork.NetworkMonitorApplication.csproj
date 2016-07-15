@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{513EB43E-0550-4631-B797-82EB8FE4F510}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DistributedComputingNetwork.NetworkMonitorApplication</RootNamespace>
+    <AssemblyName>DistributedComputingNetwork.NetworkMonitorApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationSubsystems\AssemblySubsystem.cs" />
+    <Compile Include="ApplicationSubsystems\LoggerSubsystem.cs" />
+    <Compile Include="ApplicationSubsystems\TextMessageSubsystem.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DistributedComputingNetwork.CalculationCore\DistributedComputingNetwork.CalculationCore.csproj">
+      <Project>{4dc9101e-7324-40bc-b2c5-415df0c4e8eb}</Project>
+      <Name>DistributedComputingNetwork.CalculationCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedComputingNetwork.MessageInfo\DistributedComputingNetwork.MessageInfo.csproj">
+      <Project>{07a465b1-5c61-4407-9374-c36082678b44}</Project>
+      <Name>DistributedComputingNetwork.MessageInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedComputingNetwork.NetworkDispatcher\DistributedComputingNetwork.NetworkDispatcher.csproj">
+      <Project>{719615a5-bc3b-4525-aead-160873b330af}</Project>
+      <Name>DistributedComputingNetwork.NetworkDispatcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedComputingNetwork.NetworkInformationContainer\DistributedComputingNetwork.NetworkInformationContainer.csproj">
+      <Project>{459e910d-3928-45c1-8d72-d96d49f0ccc6}</Project>
+      <Name>DistributedComputingNetwork.NetworkInformationContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedComputingNetwork.NetworkMonitor\DistributedComputingNetwork.NetworkMonitor.csproj">
+      <Project>{1d550597-a936-4fa5-83e7-382b1eb130ff}</Project>
+      <Name>DistributedComputingNetwork.NetworkMonitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedComputingNetwork.PipeConnection\DistributedComputingNetwork.PipeConnection.csproj">
+      <Project>{d37a367d-3b80-4c9f-b6f6-56a920e1ec89}</Project>
+      <Name>DistributedComputingNetwork.PipeConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedComputingNetwork.SubsystemInterfaces\DistributedComputingNetwork.SubsystemInterfaces.csproj">
+      <Project>{b8b59965-95f0-4859-af6d-f28af7351e07}</Project>
+      <Name>DistributedComputingNetwork.SubsystemInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedComputingNetwork.TaskStateMonitor\DistributedComputingNetwork.TaskStateMonitor.csproj">
+      <Project>{5461a5ee-8644-4696-8c88-0177519887d3}</Project>
+      <Name>DistributedComputingNetwork.TaskStateMonitor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

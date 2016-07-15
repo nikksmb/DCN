@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.NetworkInformation", "DistributedComputingNetwork.NetworkInformation\DistributedComputingNetwork.NetworkInformation.csproj", "{8E35FBCE-6FD1-49FB-9CC8-FBD868BC191D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.NetworkInformationContainer", "DistributedComputingNetwork.NetworkInformationContainer\DistributedComputingNetwork.NetworkInformationContainer.csproj", "{459E910D-3928-45C1-8D72-D96D49F0CCC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.NetworkMonitor", "DistributedComputingNetwork.NetworkMonitor\DistributedComputingNetwork.NetworkMonitor.csproj", "{1D550597-A936-4FA5-83E7-382B1EB130FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.Extensions", "DistributedComputingNetwork.Extensions\DistributedComputingNetwork.Extensions.csproj", "{E9A6786F-5A8A-4868-A76E-293A56B2F41B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.NetworkMonitorApplication", "DistributedComputingNetwork.NetworkMonitorApplication\DistributedComputingNetwork.NetworkMonitorApplication.csproj", "{513EB43E-0550-4631-B797-82EB8FE4F510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.TaskStateMonitor", "DistributedComputingNetwork.TaskStateMonitor\DistributedComputingNetwork.TaskStateMonitor.csproj", "{5461A5EE-8644-4696-8C88-0177519887D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.ConnectionAnalyser", "DistributedComputingNetwork.ConnectionAnalyser\DistributedComputingNetwork.ConnectionAnalyser.csproj", "{AB4F1EEA-08E7-4E99-A72F-FD33395A78B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.NetworkDispatcher", "DistributedComputingNetwork.NetworkDispatcher\DistributedComputingNetwork.NetworkDispatcher.csproj", "{719615A5-BC3B-4525-AEAD-160873B330AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.MessageInfo", "DistributedComputingNetwork.MessageInfo\DistributedComputingNetwork.MessageInfo.csproj", "{07A465B1-5C61-4407-9374-C36082678B44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.PipeConnection", "DistributedComputingNetwork.PipeConnection\DistributedComputingNetwork.PipeConnection.csproj", "{D37A367D-3B80-4C9F-B6F6-56A920E1EC89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.SubsystemInterfaces", "DistributedComputingNetwork.SubsystemInterfaces\DistributedComputingNetwork.SubsystemInterfaces.csproj", "{B8B59965-95F0-4859-AF6D-F28AF7351E07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.DCN", "DistributedComputingNetwork.DCN\DistributedComputingNetwork.DCN.csproj", "{FF28C8B0-E1D9-433E-9BA5-8C854258A5FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedComputingNetwork.CalculationCore", "DistributedComputingNetwork.CalculationCore\DistributedComputingNetwork.CalculationCore.csproj", "{4DC9101E-7324-40BC-B2C5-415DF0C4E8EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E35FBCE-6FD1-49FB-9CC8-FBD868BC191D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E35FBCE-6FD1-49FB-9CC8-FBD868BC191D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E35FBCE-6FD1-49FB-9CC8-FBD868BC191D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E35FBCE-6FD1-49FB-9CC8-FBD868BC191D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459E910D-3928-45C1-8D72-D96D49F0CCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459E910D-3928-45C1-8D72-D96D49F0CCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459E910D-3928-45C1-8D72-D96D49F0CCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459E910D-3928-45C1-8D72-D96D49F0CCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D550597-A936-4FA5-83E7-382B1EB130FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D550597-A936-4FA5-83E7-382B1EB130FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D550597-A936-4FA5-83E7-382B1EB130FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D550597-A936-4FA5-83E7-382B1EB130FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A6786F-5A8A-4868-A76E-293A56B2F41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A6786F-5A8A-4868-A76E-293A56B2F41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A6786F-5A8A-4868-A76E-293A56B2F41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A6786F-5A8A-4868-A76E-293A56B2F41B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513EB43E-0550-4631-B797-82EB8FE4F510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513EB43E-0550-4631-B797-82EB8FE4F510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513EB43E-0550-4631-B797-82EB8FE4F510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513EB43E-0550-4631-B797-82EB8FE4F510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5461A5EE-8644-4696-8C88-0177519887D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5461A5EE-8644-4696-8C88-0177519887D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5461A5EE-8644-4696-8C88-0177519887D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5461A5EE-8644-4696-8C88-0177519887D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB4F1EEA-08E7-4E99-A72F-FD33395A78B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4F1EEA-08E7-4E99-A72F-FD33395A78B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4F1EEA-08E7-4E99-A72F-FD33395A78B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4F1EEA-08E7-4E99-A72F-FD33395A78B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719615A5-BC3B-4525-AEAD-160873B330AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719615A5-BC3B-4525-AEAD-160873B330AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719615A5-BC3B-4525-AEAD-160873B330AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719615A5-BC3B-4525-AEAD-160873B330AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07A465B1-5C61-4407-9374-C36082678B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A465B1-5C61-4407-9374-C36082678B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07A465B1-5C61-4407-9374-C36082678B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A465B1-5C61-4407-9374-C36082678B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D37A367D-3B80-4C9F-B6F6-56A920E1EC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D37A367D-3B80-4C9F-B6F6-56A920E1EC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D37A367D-3B80-4C9F-B6F6-56A920E1EC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D37A367D-3B80-4C9F-B6F6-56A920E1EC89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8B59965-95F0-4859-AF6D-F28AF7351E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B59965-95F0-4859-AF6D-F28AF7351E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B59965-95F0-4859-AF6D-F28AF7351E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B59965-95F0-4859-AF6D-F28AF7351E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF28C8B0-E1D9-433E-9BA5-8C854258A5FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF28C8B0-E1D9-433E-9BA5-8C854258A5FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF28C8B0-E1D9-433E-9BA5-8C854258A5FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF28C8B0-E1D9-433E-9BA5-8C854258A5FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC9101E-7324-40BC-B2C5-415DF0C4E8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC9101E-7324-40BC-B2C5-415DF0C4E8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC9101E-7324-40BC-B2C5-415DF0C4E8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC9101E-7324-40BC-B2C5-415DF0C4E8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
